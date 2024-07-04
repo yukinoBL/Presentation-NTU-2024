@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>High Class Website</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #2c2c2c; /* Modern dark grey background */
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 2000px;
+      padding: 40px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .button-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    #output {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 18px;
+    }
+    
+    .back-button {
+      background-color: #333; /* Dark grey button */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .back-button:hover {
+      background-color: #555; /* Lighter grey on hover */
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul class="button-list">
+      <form action="/" method="post">
+        <p><input type="text" name="q"></p>
+        <p><input type="submit" value="Enter"></p>
+      </form>
+    </ul>
+    <div id="output"></div>
+  </div>
+  <button class="back-button" onclick="location.href='/main'">Go back to main Page</button>
+  <script>
+    let t;
+    
+    function storeInput() {
+      t = document.getElementById("input-field").value;
+      console.log("Input stored in variable t:", t);
+      document.getElementById("output").innerHTML = "You entered: " + t;
+    }
+  </script>
+</body>
+</html>
