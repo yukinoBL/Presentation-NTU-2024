@@ -9,16 +9,32 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #2c2c2c; /* Changed to dark grey */
+      background-color: #2c2c2c;
       font-family: Arial, sans-serif;
+      color: #fff; /* White text for contrast */
     }
     
     .container {
       max-width: 1200px;
       padding: 20px;
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #2c2c2c;
+      border: 1px solid #444; /* Darker border */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    }
+    
+    .text-list {
+      margin-bottom: 20px;
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .text-list li {
+      margin-bottom: 20px;
+      background-color: #3a3a3a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      line-height: 1.6; /* Improved readability */
     }
     
     .image-row {
@@ -30,6 +46,7 @@
     .image-link {
       margin: 10px;
       width: calc(33.33% - 20px);
+      transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
     }
     
     .image-link img {
@@ -41,27 +58,27 @@
     
     .image-link:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Light shadow on hover */
     }
     
     header {
       position: fixed; 
       top: 0; 
       width: 100%;
-      background-color: #ffffff; 
+      background-color: #2c2c2c; 
       padding: 20px;
       z-index: 1; 
       display: flex;
       justify-content: space-between; 
       align-items: center;
-      border-bottom: 1px solid #ddd; 
+      border-bottom: 1px solid #444; 
     }
     
     .logo {
       width: 100px; 
       height: auto;
       display: block;
-      margin: 10px;
+      margin: 1px;
     }
     
     .dropdown {
@@ -72,23 +89,24 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: #444;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
       z-index: 1;
       border-radius: 10px; 
       padding: 10px; 
     }
     
     .dropdown-content a {
-      color: black;
+      color: white;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
+      transition: background-color 0.3s; /* Smooth transition */
     }
     
     .dropdown-content a:hover {
-      background-color: #ddd;
+      background-color: #555;
     }
     
     .dropdown:hover .dropdown-content {
@@ -96,7 +114,7 @@
     }
     
     .dropbtn {
-      background-color: #333; 
+      background-color: #444; 
       color: white;
       padding: 10px 20px;
       border: none;
@@ -119,7 +137,7 @@
     .header-center {
       flex-grow: 1;
       text-align: center;
-      color: #333; 
+      color: #fff; 
     }
   </style>
 </head>
@@ -129,7 +147,7 @@
       <img src="file:///C:/Users/acer/Downloads/Screenshot_2024-07-03_111341-removebg-preview.jpg" alt="A beautiful landscape" class="logo">
     </div>
     <div class="header-center">
-      <h1 style="font-size:40px; font-weight: bold;">RankUp</h1>
+      <h1 style="font-size: 40px; font-weight: bold;">RankUp</h1>
     </div>
     <div class="header-right">
       <div class="dropdown">
@@ -143,20 +161,21 @@
     </div>
   </header>
   <div class="container">
+    <ul class="text-list">
+      <li>Today, we are thrilled to introduce you to our groundbreaking innovation, Rankup. As Abraham Lincoln once wisely said, "The best way to predict the future is to create it." While I wholeheartedly agree with this sentiment, I also recognize that not everyone has the necessary skills, experience, or education, particularly when it comes to starting a business.</li>
+      <li>Starting a new business is often a daunting task, filled with uncertainty and challenges. Entrepreneurs frequently face obstacles such as limited market knowledge, financial constraints, and a lack of strategic planning. These hurdles can be overwhelming, especially for those who are new to the entrepreneurial world. In fact, statistics show that a significant percentage of startups fail within their first few years, primarily due to these very issues.</li>
+      <li>Imagine the frustration and disappointment of investing time, money, and effort into a venture only to see it falter. This is a reality for many aspiring entrepreneurs. However, what if there was a way to turn the tide? What if there was a tool that could provide the necessary guidance, insights, and risk assessments to help startups navigate through the complexities of the business world?</li>
+      <li>This is where Rankup comes into play. We have created a website that aims to minimize the risks and significantly increase the chances of success for startups. Rankup is designed to bridge the gap between ambition and success, providing a comprehensive platform that analyzes various risk factors and offers actionable insights. By leveraging advanced algorithms and data analysis, Rankup empowers entrepreneurs to make informed decisions, strategically plan their ventures, and proactively manage potential pitfalls.</li>
+      <li>So, what if we told you that we have made a website that will minimize the risk and allow startups to have a higher chance of succeeding? Today, we are excited to share with you how Rankup can revolutionize the startup landscape and support entrepreneurs on their journey to success.</li>
+    </ul>
     <div class="image-row">
       <a href="index.html" class="image-link">
         <img src="https://th.bing.com/th/id/OIP.YIyznbRbDjHIKWiRaVl8mgHaF7?rs=1&pid=ImgDetMain" alt="Image 1">
       </a>
-      <a href="elseif.html" class="image-link">
+      <a href="page2.html" class="image-link">
         <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtNTg2YmF0Y2gyLWVtb2ppLTAwM18xLmpwZw.jpg" alt="Image 2">
       </a>
     </div>
-    {% if r %}
-    <div class="chatbot-response">
-      <h2>Chatbot Response:{{user_input1}}</h2>
-      <p>{{ r }}</p>
-    </div>
-    {% endif %}
   </div>
 </body>
 </html>
