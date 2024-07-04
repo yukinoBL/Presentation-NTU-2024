@@ -14,50 +14,31 @@
     }
     
     .container {
-      max-width: 600px;
-      width: 100%;
+      max-width: 2000px;
       padding: 40px;
-      background-color: #f9f9f9; /* Light background for contrast */
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slitted shadow effect */
-      text-align: center;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .button-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
     
     input[type="text"] {
-      padding: 15px;
+      padding: 10px;
       border: 1px solid #ddd;
       border-radius: 5px;
       margin-bottom: 20px;
       width: 100%;
       box-sizing: border-box;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s;
-    }
-    
-    input[type="text"]:focus {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on focus */
-    }
-    
-    input[type="submit"] {
-      background-color: #333; /* Dark grey button */
-      color: #fff;
-      padding: 15px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s, transform 0.3s;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #555; /* Lighter grey on hover */
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
     
     #output {
       margin-top: 20px;
-      color: #333;
+      color: #fff;
       font-size: 18px;
     }
     
@@ -68,7 +49,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s, transform 0.3s;
       position: fixed;
       bottom: 20px;
@@ -78,17 +59,18 @@
     .back-button:hover {
       background-color: #555; /* Lighter grey on hover */
       transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h2 style="color: #333;">Enter any topic</h2>
-    <form action="/" method="post">
-      <input type="text" id="input-field" name="q" placeholder="Enter any topic">
-      <input type="submit" value="Enter" onclick="storeInput(); return false;">
-    </form>
+    <ul class="button-list">
+      <form action="/" method="post">
+        <p><input type="text" name="q"></p>
+        <p><input type="submit" value="Enter"></p>
+      </form>
+    </ul>
     <div id="output"></div>
   </div>
   <button class="back-button" onclick="location.href='/main'">Go back to main Page</button>
