@@ -18,7 +18,8 @@ def index():
             user_input1 = f"""Generate a detailed business startup plan focusing on 
             {user_input}. Include key elements such as market analysis, target audience,
             revenue model, and scalability. Additionally, discuss potential risks and mitigation 
-            strategies involved in launching this business."""
+            strategies involved in launching this business.
+            Maximum word output is only 250 words"""
 
             # Get the response from the chatbot
             response = palm.chat(**model, messages=user_input1)
