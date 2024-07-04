@@ -1,0 +1,31 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27 Combinations</title>
+    <script>
+        function handleCombinations() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var c = document.getElementById("c").value;
+            var result = "";
+
+            if (a === "food") {
+                if (b === "0-30") {
+                    if (c === "elderly") {
+                        result = `Food - $0-30 - Elderly
+RISKS:
+Health Considerations: Elderly consumers are often health-conscious, and low-cost food might not meet their dietary needs or quality expectations.
+Taste Preferences: There might be a mismatch between the food offerings and the taste preferences of older adults.
+Convenience Needs: Elderly consumers may prefer convenient, easy-to-prepare food options, which might not be covered well in this price range.
+PREDICTED CHANCE OF FAILURE: 60%
+IMPROVEMENTS: Focus on healthful ingredients, offer ready-to-eat or easy-to-prepare options, and ensure the food meets dietary needs.`;
+                    } else if (c === "adult") {
+                        result = `Food - $0-30 - Adult
+RISKS:
+Quality Concerns: Adults may question the quality and nutritional value of low-cost food products.
+Competitive Market: The low-cost food market is highly competitive, making it difficult to stand out.
+Brand Perception: Adults may associate low prices with low quality, impacting brand perception.
+PREDICTED CHANCE OF FAILURE: 55%
+IMPROVEMENTS: Emphasize the value-for-money proposition, ensure high nutritional standards, and differentiate through unique flavors or convenience.`;
