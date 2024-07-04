@@ -14,13 +14,11 @@
     }
     
     .container {
-      max-width: 800px; /* Reduced width for better focus */
-      width: 100%;
+      max-width: 2000px;
       padding: 40px;
-      background-color: #ffffff; /* White background for better contrast */
-      border-radius: 10px; /* Rounded corners for a modern look */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-      text-align: center; /* Center align text */
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     
     .button-list {
@@ -30,41 +28,17 @@
     }
     
     input[type="text"] {
-      padding: 15px; /* Increased padding for better readability */
+      padding: 10px;
       border: 1px solid #ddd;
       border-radius: 5px;
       margin-bottom: 20px;
       width: 100%;
       box-sizing: border-box;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for input */
-      transition: box-shadow 0.3s;
-    }
-    
-    input[type="text"]:focus {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on focus */
-      outline: none; /* Remove default outline */
-    }
-    
-    input[type="submit"] {
-      background-color: #333; /* Dark grey button */
-      color: #fff;
-      padding: 15px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s, transform 0.3s;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #555; /* Lighter grey on hover */
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
     
     #output {
       margin-top: 20px;
-      color: #333; /* Dark text color for better contrast */
+      color: #fff;
       font-size: 18px;
     }
     
@@ -75,7 +49,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s, transform 0.3s;
       position: fixed;
       bottom: 20px;
@@ -85,22 +59,16 @@
     .back-button:hover {
       background-color: #555; /* Lighter grey on hover */
       transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
-    
-    h1 {
-      color: #333; /* Dark text color */
-      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>What can I help?</h1>
     <ul class="button-list">
       <form action="/" method="post">
-        <p><input type="text" id="input-field" name="q" placeholder="Enter any topic"></p>
-        <p><input type="submit" value="Enter" onclick="storeInput(); return false;"></p>
+        <p><input type="text" name="q"></p>
+        <p><input type="submit" value="Enter"></p>
       </form>
     </ul>
     <div id="output"></div>
