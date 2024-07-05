@@ -29,7 +29,7 @@ def index():
     # Render the index template for GET requests
     return render_template("index.html")
 
-@app.route("/main", methods=["GET"])
+@app.route("/main", methods=["GET", "POST"])
 def main():
     return render_template("main.html", r=None)
 
