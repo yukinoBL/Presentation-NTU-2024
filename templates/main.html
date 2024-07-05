@@ -139,6 +139,19 @@
       text-align: center;
       color: #fff; 
     }
+    .back-button {
+      background-color: #333; /* Dark grey button */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
   </style>
 </head>
 <body>
@@ -172,6 +185,7 @@
     </ul>
     <div class="image-row">
         <button class="back-button" onclick="location.href='/index'">Try Free AI assistance</button>
+        <button class="back-button" onclick="location.href='/prob'">Assist yourself</button>
     </div>
   </div>
 </body>
