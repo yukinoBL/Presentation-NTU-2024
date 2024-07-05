@@ -25,7 +25,7 @@ def index():
             response = palm.chat(**model, messages=user_input1)
             chatbot_response = response.last if response else "Sorry, there was an error processing your request."
             # Render the prob template with the chatbot response
-            return render_template("prob.html", g=user_input, f=user_input1, r=chatbot_response)
+            return render_template("chat.html", g=user_input, f=user_input1, r=chatbot_response)
     # Render the index template for GET requests
     return render_template("index.html")
 
